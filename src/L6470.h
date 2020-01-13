@@ -420,7 +420,7 @@ public:
   uint8_t L64XX_CONFIG;             // CONFIG register address
   uint8_t L64XX_STATUS;             // STATUS register address
 
-  uint8_t L64XX_status_layout;
+  uint8_t L6470_status_layout;
 
   // status bit locations
   uint16_t STATUS_NOTPERF_CMD;      // Last command not performed.
@@ -465,7 +465,7 @@ public:
     L6470::L64XX_CONFIG         = 0x18;
     L6470::L64XX_STATUS         = 0x19;
 
-    L6470::L64XX_status_layout = L6470_STATUS_LAYOUT;
+    L6470::L6470_status_layout = L6470_STATUS_LAYOUT;
 
     L6470::STATUS_NOTPERF_CMD  = 0x0080;                                               // Last command not performed.
     L6470::STATUS_WRONG_CMD    = 0x0100;                                               // Last command not valid.
@@ -494,7 +494,7 @@ public:
     L6470::L64XX_CONFIG         = 0x18;
     L6470::L64XX_STATUS         = 0x19;
 
-    L6470::L64XX_status_layout = L6470_STATUS_LAYOUT;
+    L6470::L6470_status_layout = L6470_STATUS_LAYOUT;
 
     L6470::STATUS_NOTPERF_CMD  = 0x0080;                                               // Last command not performed.
     L6470::STATUS_WRONG_CMD    = 0x0100;                                               // Last command not valid.
@@ -528,7 +528,7 @@ public:
     L6474::L64XX_CONFIG         = 0x18;
     L6474::L64XX_STATUS         = 0x19;
 
-    L6474::L64XX_status_layout = L6474_STATUS_LAYOUT;
+    L6474::L6470_status_layout = L6474_STATUS_LAYOUT;
 
     L6474::STATUS_NOTPERF_CMD  = 0x0080;                                               // Last command not performed.
     L6474::STATUS_WRONG_CMD    = 0x0100;                                               // Last command not valid
@@ -557,7 +557,7 @@ public:
     L6474::L64XX_CONFIG         = 0x18;
     L6474::L64XX_STATUS         = 0x19;
 
-    L6474::L64XX_status_layout = L6474_STATUS_LAYOUT;
+    L6474::L6470_status_layout = L6474_STATUS_LAYOUT;
 
     L6474::STATUS_NOTPERF_CMD  = 0x0080;                                               // Last command not performed.
     L6474::STATUS_WRONG_CMD    = 0x0100;                                               // Last command not valid
@@ -592,12 +592,12 @@ public:
     L6480::OCD_CURRENT_CONSTANT = 1.0f / L6480::OCD_CURRENT_CONSTANT_INV;              //  counts per mA
     L6480::STALL_CURRENT_CONSTANT_INV = 31.25;                                         //  mA per count
     L6480::STALL_CURRENT_CONSTANT = 1.0f / L6480::STALL_CURRENT_CONSTANT_INV;          //  counts per mA
-    L6480::L64XX_status_layout = L6480_STATUS_LAYOUT;
+    L6480::L6470_status_layout = L6480_STATUS_LAYOUT;
 
     L6480::L64XX_CONFIG         = 0x1A;
     L6480::L64XX_STATUS         = 0x1B;
 
-    L6480::L64XX_status_layout = L6480_STATUS_LAYOUT;
+    L6480::L6470_status_layout = L6480_STATUS_LAYOUT;
 
     L6480::STATUS_WRONG_CMD    = 0x0080;                                               // Last command not valid.
     L6480::STATUS_CMD_ERR      = 0x0080;                                               // Command error
@@ -620,12 +620,12 @@ public:
     L6480::OCD_CURRENT_CONSTANT = 1.0f / L6480::OCD_CURRENT_CONSTANT_INV;             //  counts per mA
     L6480::STALL_CURRENT_CONSTANT_INV = 31.25;                                        //  mA per count
     L6480::STALL_CURRENT_CONSTANT = 1.0f / L6480::STALL_CURRENT_CONSTANT_INV;         //  counts per mA
-    L6480::L64XX_status_layout = L6480_STATUS_LAYOUT;
+    L6480::L6470_status_layout = L6480_STATUS_LAYOUT;
 
     L6480::L64XX_CONFIG         = 0x1A;
     L6480::L64XX_STATUS         = 0x1B;
 
-    L6480::L64XX_status_layout = L6480_STATUS_LAYOUT;
+    L6480::L6470_status_layout = L6480_STATUS_LAYOUT;
 
     L6480::STATUS_WRONG_CMD    = 0x0080;                                              // Last command not valid.
     L6480::STATUS_CMD_ERR      = 0x0080;                                              // Command error
@@ -655,7 +655,7 @@ public:
     powerSTEP01::L64XX_CONFIG         = 0x1A;
     powerSTEP01::L64XX_STATUS         = 0x1B;
 
-    powerSTEP01::L64XX_status_layout = L6480_STATUS_LAYOUT;
+    powerSTEP01::L6470_status_layout = L6480_STATUS_LAYOUT;
 
     powerSTEP01::STATUS_WRONG_CMD    = 0x0080;                                        // Last command not valid.
     powerSTEP01::STATUS_CMD_ERR      = 0x0080;                                        // Command error
@@ -682,7 +682,7 @@ public:
     powerSTEP01::L64XX_CONFIG         = 0x1A;
     powerSTEP01::L64XX_STATUS         = 0x1B;
 
-    powerSTEP01::L64XX_status_layout = L6480_STATUS_LAYOUT;
+    powerSTEP01::L6470_status_layout = L6480_STATUS_LAYOUT;
 
     powerSTEP01::STATUS_WRONG_CMD    = 0x0080;                                        // Last command not valid.
     powerSTEP01::STATUS_CMD_ERR      = 0x0080;                                        // Command error
